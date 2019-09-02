@@ -14,12 +14,11 @@
             background-color: #ffe6e6;
                }
             section {
-            margin: 1%;  
+            margin: 1% 2%;  
             padding: 2%;
             background-color: #ccd9ff;
             color: #003;
             font-family: 'Special Elite', cursive;
-            
               }
         </style>
     </head>
@@ -54,8 +53,8 @@
             </p>
         
             <?php
-                echo '<p>I love to research anything that catches my interest, so obviously one of my favorite websites is the <a href="www.google.com">Google</a> search engine.  
-                         Another favorite is <a href="www.spotify.com">Spotify</a>, which allows me to throw on any genre of music depending on my mood and discover new songs I would not have come across on my own.</p>';
+                echo '<p>I love to research anything that catches my interest, so obviously one of my favorite websites is the <a href="https://www.google.com">Google</a> search engine.  
+                         Another favorite is <a href="https://www.spotify.com">Spotify</a>, which allows me to throw on any genre of music depending on my mood and discover new songs I would not have come across on my own.</p>';
                 echo '<p>Ironically, the hardest thing that I found about this assignment so far was that I was so scared of messing up the PHP that I spent some time scouring the book thinking that if variable, concatenate,
                          and constants are assigned <em>values</em>, did the assignment mean we needed to use at least three and were those properties.  Then I realized that instruction was in the CSS section, and took
                          Swifty\'s advice to "Calm Down".  Also, using Brackets and CodePen, I have not done much stying in my head section, so that also made me nervous.  And although I am not there yet, 
