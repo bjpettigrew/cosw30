@@ -19,7 +19,6 @@
             background-color: #ccd9ff;
             color: #003;
             font-family: 'Special Elite', cursive;
-            
               }
         </style>
     </head>
