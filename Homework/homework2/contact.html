@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <title>Registration Form</title>
+        <style>
+          body {
+          background-image: linear-gradient(to right, red, orange, yellow,green, blue, indigo, violet);
+          color: #32174d;
+            font-size: 1.3em;
+            font-weight: bold;
+          }
+          div {
+            margin: 1% 15%;
+            background: white;
+            padding: 3% 10%;
+            border-style: ridge;
+            border-width: 5px;
+            
+          }
+          h1 {
+            text-align: center;
+            font-size: 5em;
+            color: black;
+            -webkit-text-fill-color: white;
+            -webkit-text-stroke-width: 1.5px;
+            -webkit-text-stroke-color: black;
+
+          }
+          h3 {
+            text-align: center;
+            font-size: 3em;
+            color: black;
+            -webkit-text-fill-color: white;
+            -webkit-text-stroke-width: 1.5px;
+            -webkit-text-stroke-color: black;
+          }
+          h4 {
+            text-align: center;
+          }
+          #submit {
+            color: #32174d;
+            font-size: 1.3em;
+            font-weight: bold;
+          }
+          
+        </style>
+    </head>
+    
+    <body>
+    
+        <h1><b>JUST JACK FOR PRESIDENT</b></h1>
+      
+        <h3>Register Today</h3>
+        <div>
+          
+          <img src="https://res.cloudinary.com/bayleigh/image/upload/v1568004388/JustJack/Just_Jack_itlcrw.jpg" alt="Just Jack Image" style="float: right; width: 50%; border-style: ridge; border-weight: 5px; border-radius: 50px;">
+          
+          
+      <form action="process_register.php" method="POST">
+            <label>First Name:</label><br>
+              <input type="text" name="first_name" id="first_name" required>
+            <br><br>
+            <label>Last Name:</label><br>
+              <input type="text" name="last_name" id="last_name" required>
+            <br><br>
+            <label>Identified Gender:</label><br>
+            <select name="gender" id="gender" required>
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+              <option value="non-binary">Non-Binary</option>
+              <option value="none">None Of The Above</option>
+            </select>
+            <br><br>
+            <label>Age Range:</label><br>
+              <input type="radio" name="age" value="under 18" required>Under 18<br>
+              <input type="radio" name="age" id="age" value="18-25">18-25<br>
+              <input type="radio" name="age" id="age" value="26-40">26-40<br>
+              <input type="radio" name="age" id="age" value="41-64">41-64<br>
+              <input type="radio" name="age" id="age" value="65+">65+<br>
+            <br>
+            <label>Interests:</label><br>
+              <input type="checkbox" name="interests" id="interests" value="cher">Cher<br>
+              <input type="checkbox" name="interests" id="interests" value="musicals">Musicals<br>
+              <input type="checkbox" name="interests" id="interests" value="fans">Fans<br>
+              <input type="checkbox" name="interests" id="interests" value="cocktails">Cocktails<br>
+              <input type="checkbox" name="interests" id="interests" value="men">Men<br>
+              <input type="checkbox" name="interests" id="interests" value="dance">Dance<br>
+              <input type="checkbox" name="interests" id="interests" value="jazz_hands">Jazz Hands<br>
+            <br>
+          <label>Contribution Amount</label><br>
+            $<input type="number" name="donation" id="donation" value="0">
+            <br><br>
+          <label>Sign Up For Our Mailing List:</label><br>
+            <input type="checkbox" name="list" id="list" value="yes" checked>Yes 
+            <input type="checkbox" name="list" id="list" value="no">No<br><br>
+          <label>Comments:</label><br>
+            <input type="textarea" name="comments" id="comments" style="width:75%; height:400px;">
+            <br><br>     
+            <input type="submit" name="submit" id="submit" value="Submit"> 
+        </form>
+    </div>
+    </body>
+  <footer>
+    <h4>Campaign sponsored by The Anastasia Beaverhausen Foundation</h4>
+  </footer>
+    
+    
+    
+    
+    
+    
+</html>
+    
+    
+    
+    
+    
+    
+    
+</html>
