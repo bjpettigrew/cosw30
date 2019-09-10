@@ -3,6 +3,17 @@
 <head>
     <meta charset="utf-8">
     <title>Form Feedback</title>
+    <style>
+        body {
+          background-image: linear-gradient(to right, red, orange, yellow,green, blue, indigo, violet);
+          color: #32174d;
+          font-size: 1.3em;
+          font-weight: bold;
+          padding: 10%;
+          }
+        
+        
+    </style>
 </head>
 <body>
 
@@ -17,42 +28,6 @@
     $list = $_POST['list'];
     $comments = $_POST['comments'];
     $submit = $_POST['submit'];
-    
-    //$first_name = $_REQUEST['first_name'];
-    //$last_name = $_REQUEST['last_name'];
-    //$gender = $_REQUEST['gender'];
-    //$age = $_REQUEST['age'];
-    //$interests = $_REQUEST['interests'];
-    //$donation = $_REQUEST['donation'];
-    //$list = $_REQUEST['list'];
-    //$comments = $_REQUEST['comments'];
-    //$submit = $_REQUEST['submit'];
-    
-//if (!empty($_REQUEST['first_name'])) {
-//        $first_name = $_REQUEST['first_name'];
-//    } else {
-//        $first_name = NULL;
-//      echo '<p class="error">There\'s no shame in getting it wrong.  There\'s only shame in getting ugly. You forgot to enter your first name!</p>';
-//    }
-//if (!empty($_REQUEST['last_name'])) {
-//        $last_name = $_REQUEST['last_name'];
-//    } else {
-//        $last_name = NULL;
-//      echo '<p class="error">There\'s no shame in getting it wrong.  There\'s only shame in getting ugly. You forgot to enter your last name!</p>';
-//    }
-//if (!empty($_REQUEST['gender'])) {
-//        $gender = $_REQUEST['gender'];
-//    } else {
-//        $gender = NULL;
-//      echo '<p class="error">There\'s no shame in getting it wrong.  There\'s only shame in getting ugly. You forgot to enter your gender!</p>';
-//    }    
-//if (!empty($_REQUEST['age'])) {
-//        $age = $_REQUEST['age'];
-//    } else {
-//        $age = NULL;
-//    echo '<p class="error">There\'s no shame in getting it wrong.  There\'s only shame in getting ugly. You forgot to enter your age!</p>';
- //   }    
-
     
    if ( !empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST['gender']) && !empty($_POST['age']))
    {
