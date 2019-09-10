@@ -35,7 +35,7 @@
     
    if ( !empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST['gender']) && !empty($_POST['age']))
    {
-        echo '<h1>Haley Joel Osment you are fantastic!  Jennifer Love Hewitt you\'ve signed up!  Thank you for supporting Just Jack! For President!</h1>';
+        echo '<h1>Haley Joel Osment you are fantastic!  Jennifer Love Hewitt you\'ve signed up! <br> Thank you for supporting Just Jack! For President!</h1>';
     }
    else {
         //Error - output an error message
