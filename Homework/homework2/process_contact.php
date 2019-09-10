@@ -25,6 +25,7 @@
 
     $first_name = $_POST['first_name'];
     $last_name = $_POST['last_name'];
+    $email = $_POST['email'];
     $gender = $_POST['gender'];
     $age = $_POST['age'];
     $interests = $_POST['interests'];
@@ -33,7 +34,7 @@
     $comments = $_POST['comments'];
     $submit = $_POST['submit'];
     
-   if ( !empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST['gender']) && !empty($_POST['age']))
+   if ( !empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST['email']) && !empty($_POST['gender']) && !empty($_POST['age']))
    {
         echo '<h1>Haley Joel Osment you are fantastic!  Jennifer Love Hewitt you\'ve signed up! <br> Thank you for supporting Just Jack! For President!</h1>';
     }
