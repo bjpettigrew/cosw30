@@ -6,12 +6,13 @@
     <style>
         body {
           background-image: linear-gradient(to right, red, orange, yellow,green, blue, indigo, violet);
-          color: #32174d;
+          color: black;
           -webkit-text-fill-color: white;
           -webkit-text-stroke-width: 1.5px;
           -webkit-text-stroke-color: black;
           font-size: 1.3em;
           font-weight: bold;
+          text-align: center;
           padding: 10%;
           }
         
