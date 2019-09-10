@@ -36,8 +36,8 @@
     
    if ( !empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST['email']) && !empty($_POST['gender']) && !empty($_POST['age']))
    {
-        echo "<h1>Haley Joel Osment you are fantastic!  Jennifer Love Hewitt you\'ve signed up! <br> Thank you for supporting Just Jack! For President!</h1><br>";
-        echo "<p>Hello $first_name $last_name, you identify $gender, your age range is $age, your political interests include $interests.</p><p>Your $donation contribution is appreciated.</p> <br>";
+        echo "<h1>Haley Joel Osment you are fantastic!  Jennifer Love Hewitt you've signed up! <br> Thank you for supporting Just Jack! For President!</h1><br>";
+        echo "<p>Hello $first_name $last_name, you identify $gender, your age range is $age, your political interests include $interests.</p><p>Your $ $donation contribution is appreciated.</p> <br>";
         echo "<p>We appreciate your comments: </p> <pre>$comments</pre>  <p>We will reply to you at $email.</hp>";
     }
    else {
