@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Tuition Calculator</title>
+    <meta charset="utf-8">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Cinzel|Cormorant+Garamond&display=swap');
+      body {
+        background: black;
+        padding: 5%;
+      }
+      #container1 {
+        background: red;
+        margin-top: 10%;
+        padding: 5%;
+        border-style: ridge;
+      }
+      #form_box {
+        background: white;
+        margin-top: 10%;
+        padding: 5%;
+        text-align: center;
+        border-style: ridge;
+        }
+   
+      h1 {
+       font-family: 'Cinzel', serif; 
+      }
+      h2 {
+        font-family: 'Cormorant Garamond', serif;
+      }
+      form {
+        text-align:left;
+        padding: 2% 20%;
+      }
+      p {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.25em;
+        font-weight: bold;
+      }
+      #submit {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.25em;
+        font-weight: bold;
+        color: red;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        padding: 0 45%;
+      }
+      footer {
+        color: white;
+      }
+      
+    </style>
+  </head>
+  
+  <body>
+    <div id="container1">
+       <div id="form_box">  
+         <img src="https://res.cloudinary.com/bayleigh/image/upload/v1568581000/php%20project%203/lbcc_logo_xtfdws.jpg" alt="Long Beach City College Logo" width="45%">
+        
+         <h1>Tuition & Fees Calculator</h1>
+         <h2>Fill In The Form Below To Calculate Tuition And Fees</h2>
+         <form action="process_tuition.php" method="post">
+           <label for="resident"><p>Are you a resident of the state of California?</label>&nbsp &nbsp
+           <select name="resident" id="resident">
+             <option value="46">Yes</option>
+             <option value="265">No</option>
+           </select></p>
+           <label for="units"><p>Number of units this semester?</label>&nbsp &nbsp
+         <select name="units" id="units">
+           <option disabled selected value><p>--Choose number of units--</option> 
+           <option value="1">1</options>
+           <option value="2">2</options>
+           <option value="3">3</options>
+           <option value="4">4</options>
+           <option value="5">5</options>
+           <option value="6">6</options>
+           <option value="7">7</options>
+           <option value="8">8</options>
+           <option value="9">9</options>
+           <option value="10">10</options>
+           <option value="11">11</options>
+           <option value="12">12</options>
+           <option value="13">13</options>
+           <option value="14">14</options>
+           <option value="15">15</options>
+           <option value="16">16</options>
+           <option value="17">17</options>
+           <option value="18">18</options>
+           <option value="19">19</options>
+           <option value="20">20</options>
+           <option value="21">21</option>
+</select></p>
+        <p>There is a <i>mandatory</i> <input type="hidden" name="mandatory" value="20">$20.00 student health fee for all registered students.</p>
+        <h2>Optional Fees:</h3>
+        <label for="services"><p>College Services Card?</label> &nbsp &nbsp
+        <select name="services" id="services">
+          <option value="20">Yes [$20]</option>
+          <option value="0">No [$0]</option>
+        </select></p>
+        <label for"parking"><p>Parking Permit?</label> &nbsp &nbsp
+        <select name="parking" id="parking">
+          <option value="30"><p>Yes [$30]</p></option>
+          <option value="0"><p>No [$0]</p></option>
+        </select></p>
+        <br>
+        <input type="submit" name="submit" id="submit">
+          
+
+         </form>
+      </div>
+    </div>
+  </body>
+  
+  <footer>
+    <p>Bayleigh Pettigrew COSW30 &copy2019</p>
+  </footer>
+<html>
