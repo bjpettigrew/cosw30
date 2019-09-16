@@ -16,7 +16,7 @@
       }
       #form_box {
         background: white;
-        padding: 25%;
+        padding: 2% 25%;
         text-align: left;
         border-style: ridge;
         }
