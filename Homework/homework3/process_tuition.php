@@ -16,7 +16,7 @@
       }
       #form_box {
         background: white;
-        padding: 10%;
+        padding: 20%;
         text-align: left;
         border-style: ridge;
         }
@@ -43,8 +43,9 @@
   </head>
   
   <body>
-    
-    <img src="https://res.cloudinary.com/bayleigh/image/upload/v1568581000/php%20project%203/lbcc_logo_xtfdws.jpg" alt="Long Beach City College Logo" width="45%">
+    <div id="container1">
+        <div id="form_box">
+        <img src="https://res.cloudinary.com/bayleigh/image/upload/v1568581000/php%20project%203/lbcc_logo_xtfdws.jpg" alt="Long Beach City College Logo" width="45%">
         
          <h1>Tuition & Fees Calculator</h1>
 
@@ -64,7 +65,10 @@ $scholarship = (rand(0, $tuition));
 $total = $subtotal - $scholarship;
 
 
-echo "<div id=\"container1\"><div id=\"form_box\"><p> Cost of Tuition: " .  $units . " unit(s) x $" . $resident . " per unit = $" . $tuition . "</p>";
+//echo "<div id=\"container1\"><div id=\"form_box\"><img src="https://res.cloudinary.com/bayleigh/image/upload/v1568581000/php%20project%203/lbcc_logo_xtfdws.jpg" alt="Long Beach City College Logo" width="45%">";
+        
+echo "<h1>Tuition & Fees Calculator</h1>";
+echo "<p> Cost of Tuition: " .  $units . " unit(s) x $" . $resident . " per unit = $" . $tuition . "</p>";
 echo "<br>";
 echo "<p>Mandatory Student Health Fee: $" . $mandatory . "</p>";
 echo "<br>";
