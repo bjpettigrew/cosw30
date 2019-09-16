@@ -73,7 +73,7 @@ $scholarship = (rand(0, $tuition));
 $total = $subtotal - $scholarship;
 
 
-echo "<div><h2> Cost of Tuition: " .  $units . "unit(s) x $" . $resident . "per unit = $" . $tuition . "</h2>";
+echo "<div id=\"container1\"><div id=\"form_box\"><h2> Cost of Tuition: " .  $units . "unit(s) x $" . $resident . "per unit = $" . $tuition . "</h2>";
 echo "<br>";
 echo "Mandatory Student Health Fee: $" . $mandatory;
 echo "<br>";
@@ -82,12 +82,12 @@ echo "<br>";
 echo "Parking Permit: $" . $parking;
 echo "<br>";
 echo "Total Registration Costs: $" . $subtotal;
-echo "<br></div><div>;
+echo "<br></div><div>";
 
 
 
 
-<body>
+echo "</body>"
 
 
 
