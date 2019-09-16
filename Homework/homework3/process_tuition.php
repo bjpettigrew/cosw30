@@ -22,7 +22,8 @@
         }
    
       h1 {
-       font-family: 'Cinzel', serif; 
+       font-family: 'Cinzel', serif;
+       text-align: center; 
       }
       h2 {
         font-family: 'Cormorant Garamond', serif;
@@ -36,7 +37,9 @@
         font-size: 1.25em;
         font-weight: bold;
       }
-      
+      img {
+          text-align: center;
+      }
       
       
     </style>
@@ -67,22 +70,22 @@ $total = $subtotal - $scholarship;
 
 //echo "<div id=\"container1\"><div id=\"form_box\"><img src="https://res.cloudinary.com/bayleigh/image/upload/v1568581000/php%20project%203/lbcc_logo_xtfdws.jpg" alt="Long Beach City College Logo" width="45%">";
         
-echo "<h1>Tuition & Fees Calculator</h1>";
+
 echo "<p> Cost of Tuition: " .  $units . " unit(s) x $" . $resident . " per unit = $" . $tuition . "</p>";
-echo "<br>";
+
 echo "<p>Mandatory Student Health Fee: $" . $mandatory . "</p>";
-echo "<br>";
+
 echo "<p>College Services Card: $" . $services . "</p>";
-echo "<br>";
+
 echo "<p>Parking Permit: $" . $parking . "</p>";
-echo "<br>";
+
 echo "<h2>Total Registration Costs: $" . $subtotal . "</h2>";
 echo "<br>";
 
 echo "<p>Scholarship Awarded: $" . $scholarship . "</p>";
 echo "<br>";
 
-echo "<h2>Total Balance Due At Registration: $" . $total . "</h2>";
+echo "<h1>Total Balance Due At Registration: $" . $total . "</h1>";
 
 
 echo "<br></div><div>";
