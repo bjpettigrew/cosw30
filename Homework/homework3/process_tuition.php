@@ -44,7 +44,9 @@
   
   <body>
     
-
+    <img src="https://res.cloudinary.com/bayleigh/image/upload/v1568581000/php%20project%203/lbcc_logo_xtfdws.jpg" alt="Long Beach City College Logo" width="45%">
+        
+         <h1>Tuition & Fees Calculator</h1>
 
 <?php # Script 2.2 process_contact.php
 
