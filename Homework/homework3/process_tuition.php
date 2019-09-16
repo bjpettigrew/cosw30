@@ -16,8 +16,8 @@
       }
       #form_box {
         background: white;
-        padding: 5%;
-        text-align: center;
+        padding: 10%;
+        text-align: left;
         border-style: ridge;
         }
    
@@ -36,25 +36,14 @@
         font-size: 1.25em;
         font-weight: bold;
       }
-      #submit {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 1.25em;
-        font-weight: bold;
-        color: red;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-        padding: 0 45%;
-      }
-      footer {
-        color: white;
-      }
+      
+      
       
     </style>
   </head>
   
   <body>
-    <div id="container1">
-       <div id="form_box">  
-
+    
 
 
 <?php # Script 2.2 process_contact.php
@@ -73,19 +62,24 @@ $scholarship = (rand(0, $tuition));
 $total = $subtotal - $scholarship;
 
 
-echo "<div id=\"container1\"><div id=\"form_box\"><h2> Cost of Tuition: " .  $units . "unit(s) x $" . $resident . "per unit = $" . $tuition . "</h2>";
+echo "<div id=\"container1\"><div id=\"form_box\"><p> Cost of Tuition: " .  $units . " unit(s) x $" . $resident . " per unit = $" . $tuition . "</p>";
 echo "<br>";
-echo "Mandatory Student Health Fee: $" . $mandatory;
+echo "<p>Mandatory Student Health Fee: $" . $mandatory . "</p>";
 echo "<br>";
-echo "College Services Card: $" . $services;
+echo "<p>College Services Card: $" . $services . "</p>";
 echo "<br>";
-echo "Parking Permit: $" . $parking;
+echo "<p>Parking Permit: $" . $parking . "</p>";
 echo "<br>";
-echo "Total Registration Costs: $" . $subtotal;
+echo "<h2>Total Registration Costs: $" . $subtotal . "</h2>";
+echo "<br>";
+
+echo "<p>Scholarship Awarded: $" . $scholarship . "</p>";
+echo "<br>";
+
+echo "<h2>Total Balance Due At Registration: $" . $total . "</h2>";
+
+
 echo "<br></div><div>";
-
-
-
 
 echo "</body>"
 
