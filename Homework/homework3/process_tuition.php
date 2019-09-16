@@ -16,7 +16,7 @@
       }
       #form_box {
         background: white;
-        padding: 20%;
+        padding: 25%;
         text-align: left;
         border-style: ridge;
         }
@@ -37,8 +37,11 @@
         font-size: 1.25em;
         font-weight: bold;
       }
-      img {
-          text-align: center;
+      .center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
       }
       
       
@@ -48,7 +51,7 @@
   <body>
     <div id="container1">
         <div id="form_box">
-        <img src="https://res.cloudinary.com/bayleigh/image/upload/v1568581000/php%20project%203/lbcc_logo_xtfdws.jpg" alt="Long Beach City College Logo" width="45%">
+        <img src="https://res.cloudinary.com/bayleigh/image/upload/v1568581000/php%20project%203/lbcc_logo_xtfdws.jpg" alt="Long Beach City College Logo" width="45%" class ="center">
         
          <h1>Tuition & Fees Calculator</h1>
 
@@ -80,7 +83,6 @@ echo "<p>College Services Card: $" . $services . "</p>";
 echo "<p>Parking Permit: $" . $parking . "</p>";
 
 echo "<h2>Total Registration Costs: $" . $subtotal . "</h2>";
-echo "<br>";
 
 echo "<p>Scholarship Awarded: $" . $scholarship . "</p>";
 echo "<br>";
