@@ -60,12 +60,13 @@
          <h2>Fill In The Form Below To Calculate Tuition And Fees</h2>
          <form action="process_tuition.php" method="post">
            <label for="resident"><p>Are you a resident of the state of California?</label>&nbsp &nbsp
-           <select name="resident" id="resident">
+           <select name="resident" id="resident" required>
+             <option disabled selected value><p>--Choose residency--</option> 
              <option value="46">Yes</option>
              <option value="265">No</option>
            </select></p>
            <label for="units"><p>Number of units this semester?</label>&nbsp &nbsp
-         <select name="units" id="units">
+         <select name="units" id="units" required>
            <option disabled selected value><p>--Choose number of units--</option> 
            <option value="1">1</options>
            <option value="2">2</options>

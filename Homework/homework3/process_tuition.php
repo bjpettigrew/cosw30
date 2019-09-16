@@ -11,38 +11,22 @@ $services = $_POST['services'];
 $parking = $_POST['parking'];
 $submit = $_POST[submit];
 
+$tuition = $resident * $units;
+$subtotal = $tuition + $mandatory + $services + $parking;
+//calculate random scholarship?
+//$scholarship = (rand (0, $total) . "<br>"');
+$total = $subtotal - $scholarship;
 
-if 'resident' =
 
-    echo "Cost of Tuition:  $" __ "unit(s) x $"  __ "= $" __
+echo "Cost of Tuition: " .  $units . "unit(s) x $" . $resident . "cost per unit = $" . $tuition;
 
-else
-    
-    echo "Cost of Tuition:  $" __ "unit(s) x $"  __ "= $" __
+echo "Mandatory Student Health Fee: $" . $mandatory;
 
-echo "Mandatory Student Health Fee: $" $mandatory
+echo "College Services Card: $" . $services;
 
-if 'services' =
+echo "Parking Permit: $" . $parking;
 
-echo "College Services Card: $" ___
-
-else
-
-echo "College Services Card: $" ___
-
-if 'parking' = 
-
-echo "Parking Permit: $" ___
-
-else
-
-echo "Parking Permit: $" ___
-
-echo "Total Registration Costs: $" ______
-
-echo "Scholarship Award: $"  ____
-
-echo "Total Balance Due At Registration: $" ___________
+echo "Total Registration Costs: $" . $subtotal;
 
 
 
