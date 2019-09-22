@@ -1,7 +1,7 @@
 <?php
     
    
-    $text = $_POST['text'];
+    $text = $_POST['quote'];
     $textExplode = explode(' ', $text);
     
     
