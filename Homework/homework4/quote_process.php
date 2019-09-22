@@ -28,7 +28,7 @@
     echo "<p><strong>Quoted Words In Alphabetical Order:</strong></p>";
     
     natcasesort($quoteExplode);
-        echo "<li>$quoteExplode</li>";
+        echo "<li>'$quoteExplode'</li>";
     
     
     
