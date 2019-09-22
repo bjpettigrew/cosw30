@@ -12,13 +12,13 @@
    
     $quote = $_POST['quote'];
     
-    echo '<strong>Original Quote</strong';
-    
-    echo '<p>$quote</p>'; 
+    echo '<p><strong>Original Quote</strong></p>';
+        
+    echo '<p>"$quote"</p>'; 
     echo '<p>Word Count:</p>';
     echo 'str_wrd_count("$quote")';
     
-    echo '<strong>Quoted Words In Alphabetical Order:</strong>';
+    echo '<p><strong>Quoted Words In Alphabetical Order:</strong></p>';
     sort ($quote, SORT_NATURAL);
         foreach ($quote as $key => $val) {
             echo "quote [" . $key . "] = " . $val . "\n";
