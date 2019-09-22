@@ -11,12 +11,15 @@
     
    
     $quote = $_POST['quote'];
+    $num = count($quote);
     
     echo "<p><strong>Original Quote:</strong></p>";
         
     echo "<p>'$quote'</p>"; 
     echo "<p><strong>Word Count:</strong></p>";
-    echo "str_word_count('$quote')";
+    //echo "str_word_count('$quote')";
+    echo "<p>'$num'</p>";
+    
     
     echo "<p><strong>Quoted Words In Alphabetical Order:</strong></p>";
     sort ($quote, SORT_NATURAL);
