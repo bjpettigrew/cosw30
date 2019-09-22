@@ -16,14 +16,17 @@
     echo "<p><strong>Original Quote:</strong></p>";
         
     echo "<p>'$quote'</p>"; 
+    
+    $quoteExplode = explode(' ', $quote);
+    
     echo "<p><strong>Word Count:</strong></p>";
-    //echo "str_word_count('$quote')";
-    $wordcount = str_word_count(implode(' ', $quote));
-    echo "<p>'$wordcount'</p>";
+   
+    
+    echo count($quoteExplode);
     
     
     echo "<p><strong>Quoted Words In Alphabetical Order:</strong></p>";
-    sort ($quote, SORT_NATURAL);
+    sort ($quoteExplode, SORT_NATURAL);
         foreach ($quote as $key => $val) {
             echo "quote [' . $key . '] = ' . $val . '\n";
         }
