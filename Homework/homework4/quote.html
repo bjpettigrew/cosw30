@@ -1,0 +1,66 @@
+<!doctype html>
+    <head>
+        <meta charset="utf-8">
+        <title>Quote Manipulator</title>
+        
+        <style>
+          body {
+            background-color: #4cc3ac;
+            background-image: url("https://res.cloudinary.com/bayleigh/image/upload/v1568694637/php%20module4/quote_image_zcku4z.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+          
+          #form {
+            float: right;
+            margin: 3% 10%;
+              
+          }
+          
+          textarea {
+                text-transform: lowercase;
+                text-align: left;
+                color: #54A352;
+                background-color: #D3F0D2;
+                border: 3px ridge #54A352;
+            }
+          
+          #submit {
+              border: 3px ridge #54A352;
+              background-color: #D3F0D2;
+              color: #366835;
+              padding: 10px;
+          }
+      
+         .button {
+         background-color: #D3F0D2;
+         border: 3px ridge #54A352;
+         color: #366835;
+         padding: 20px 34px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 20px;
+         margin: 4px 2px;
+         cursor: pointer;
+         }
+            
+        </style>
+    </head>
+    <body>
+      <div id="form">
+        <form action="quote_process.php" method="post">
+      
+          <label for "quote"><h1>Enter Your Favorite Quote Here:</h1><label><br>
+            <textarea name="quote" id="quote" name="quote" placeholder="enter quote with at least five words and each word separated with a space" style="width: 400px; height: 125px;"></textarea> <br><br>
+            <input type="submit" id="submit" value="Submit"><br><br><br>
+            
+            <a href = "https://w3docs.com" class="button">Population Graph</button></a>
+            
+            
+   
+            
+        </form>
+       </div>    
+    </body>
+</html>
