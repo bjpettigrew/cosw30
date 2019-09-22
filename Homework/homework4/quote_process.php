@@ -16,7 +16,7 @@
         
     echo "<p>'$quote'</p>"; 
     echo "<p><strong>Word Count:</strong></p>";
-    echo "str_wrd_count('$quote')";
+    echo "str_word_count('$quote')";
     
     echo "<p><strong>Quoted Words In Alphabetical Order:</strong></p>";
     sort ($quote, SORT_NATURAL);
