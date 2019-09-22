@@ -28,16 +28,16 @@
     echo "<p><strong>Quoted Words In Alphabetical Order:</strong></p>";
     
     natcasesort($quoteExplode);
-
+        echo "<li>$quoteExplode</li>";
     
     
     
     
     //ksort ($quoteExplode);
-        foreach ($quoteExplode as $key => $val) {
-           echo "$quoteExplode [' . $key . '] = ' . $val . '\n";
-        }
-    
+   //     foreach ($quoteExplode as $key => $val) {
+     //      echo "$quoteExplode [' . $key . '] = ' . $val . '\n";
+    //    }
+    //
     //$quoteExplode = explode(' ', $quote);
     
     
