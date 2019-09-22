@@ -35,7 +35,7 @@
     
     //ksort ($quoteExplode);
        foreach ($quoteExplode as $key => $val) {
-         echo "<li>$quoteExplode ' . $val . '\n</li>";
+         echo "<li>' . $val . '\n</li>";
       }
     //
     //$quoteExplode = explode(' ', $quote);
