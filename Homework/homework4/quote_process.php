@@ -28,16 +28,23 @@
     echo "<p><strong>Quoted Words In Alphabetical Order:</strong></p>";
     
     natcasesort($quoteExplode);
-        //echo "<li>'$quoteExplode'</li>";
-    
-    
-    
-    
-    //ksort ($quoteExplode);
+        
        foreach ($quoteExplode as $val) {
          echo "<li>$val\n</li>";
       }
-    //
+    
+    echo "<p><strong>Quoted Words In Reverse-Alphabetical Order:</strong></p>";
+    
+    rsort($quoteExplode);
+        
+       foreach ($quoteExplode as $val) {
+         echo "<li>$val\n</li>";
+      }
+    
+    
+    
+    
+    
     //$quoteExplode = explode(' ', $quote);
     
     
