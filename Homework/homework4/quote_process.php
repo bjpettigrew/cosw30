@@ -62,13 +62,14 @@
     
     
     foreach ($quoteExplode as $value){
-        //echo $value . "\n";
         echo "<li>$value\n</li>";
     }
     
     
     echo "<p><strong>New Word Count:</strong></p>";
     echo count($quoteExplode);
+    
+    echo "<p><strong>Subtract First Three Words Of Array:</strong></p>";
     
     array_splice($quoteExplode, 0, 3);
     
@@ -78,40 +79,15 @@
     
     echo "<p><strong>Final Word Count:</strong></p>";
     echo count($quoteExplode);
+    ?>
     
-    //$quoteExplode = explode(' ', $quote);
-    
-    
-    
-   // echo 'Text Explode';
-    //print_r($textExplode);
-    
-    //$shuffledText = shuffle($textExplode);
-    
-    //echo 'Shuffled Text';
-   // print_r($textExplode);
-    
-    //foreach loop
-    //foreach($textExplode as $key => $value) {
-    //    echo "<p> $key Value: $value</p>";
-    //}
+    <a href = "https://cosw30bjp.herokuapp.com/Homework/homework4/quote.html" class="button">Try Again?</button></a>
     
     
-    //$textImplode = implode(' ', $textExplode);
-    //echo"<p>$textImplode</p>";
-
- //for($i = 0; $i < $numParagraphs; $i++) {
-    //echo "<p>$textImplode</p>";
- //}
- 
-//     output a paragraph
-//     echo "<p>$text</p>"; 
-// }
-//foreach()
-//while()
+   
 
 
-?>
+
 
 
 
