@@ -49,7 +49,7 @@
           //echo '<tr><td colspan="3"><strong>In Order of Population:</strong></td></tr>';
           
                 
-                for($rank = 1; $i <= 15; $i++) {
+                for($rank = 1; $rank <= 15; $rank++) {
  
  
  
