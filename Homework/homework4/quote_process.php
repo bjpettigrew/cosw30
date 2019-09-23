@@ -12,6 +12,18 @@
               padding: 3% 10%;
           }
           
+         .button {
+         background-color: #D3F0D2;
+         border: 3px ridge #54A352;
+         color: #366835;
+         padding: 20px 34px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 20px;
+         margin: 4px 2px;
+         cursor: pointer;
+         }
           
           
       </style>
@@ -80,7 +92,7 @@
     echo "<p><strong>Final Word Count:</strong></p>";
     echo count($quoteExplode);
     ?>
-    
+    <br>
     <a href = "https://cosw30bjp.herokuapp.com/Homework/homework4/quote.html" class="button">Try Again?</button></a>
     
     
