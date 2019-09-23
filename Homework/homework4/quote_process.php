@@ -24,12 +24,14 @@
               float: left;
               margin: 2%;
               width: 40%;
+              padding: 2%;
           }
           #right_box {
               border: 3px ridge #54A352;
               float: left;
               margin: 2%;
               width: 40%;
+              padding: 2%;
           }
           
           
