@@ -49,17 +49,18 @@
           //echo '<tr><td colspan="3"><strong>In Order of Population:</strong></td></tr>';
           
                 
-                for($rank = 1; $rank <= 15; $rank++) {
+                
  
  
  
                 
                 
-          foreach ($poptable as $k => $v) 
+          foreach ($poptable as $k => $v) {
+            for($rank = 1; $rank <= 15; $rank++){
               echo "<tr><td>$rank</td>
-                    <td>$k</td>
-                    <td>$v</td></tr>\n";
-                    
+                   <td>$k</td>
+                   <td>$v</td></tr>\n";
+            }      
           }  
             ?>
             
