@@ -51,8 +51,8 @@
                 
                 
  
- 
-            $rank = array();
+            //$rank = array();
+            $rank = $i();
             for($i = 1; $i <+ 15; $i++)
             $rank[$i] = $i +1;
             
