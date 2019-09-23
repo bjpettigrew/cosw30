@@ -12,15 +12,31 @@
               padding: 3% 10%;
           }
           
+          h1 {
+              text-align: center;
+          }
+          
+          #left_box {
+              border: 3px ridge #54A352;
+              float: left;
+              margin: 2%;
+          }
+          #right_box {
+              border: 3px ridge #54A352;
+              float: left;
+              margin: 2%;
+          }
+          
+          
          .button {
          background-color: #D3F0D2;
          border: 3px ridge #54A352;
          color: #366835;
-         padding: 20px 34px;
+         padding: 15px 24px;
          text-align: center;
          text-decoration: none;
          display: inline-block;
-         font-size: 20px;
+         font-size: 14px;
          margin: 4px 2px;
          cursor: pointer;
          }
@@ -38,13 +54,15 @@
     $extra = $_POST['extra'];
     
     
-    echo "<p><strong>Original Quote:</strong></p>";
+    echo "<h1><strong>Original Quote:</strong></h1>";
         
-    echo "<p>\"$quote\"</p>"; 
+    echo "<p><strong>\"$quote\"</strong></p>"; 
     
     $quoteExplode = explode(' ', $quote);
     $extraExplode = explode(' ', $extra);
-    
+    ?>
+    <div id="left_box">
+    <?php
     echo "<p><strong>Word Count:</strong></p>";
    
     
@@ -66,12 +84,16 @@
        foreach ($quoteExplode as $val) {
          echo "<li>$val\n</li>";
       }
+    ?>
+    
+    </div>
+    <div id="right_box">
+    <?php
+    
     
     echo "<p><strong>With Additional Words:</strong></p>";
     
     $quoteExplode = array_merge($quoteExplode, $extraExplode);
-    
-    
     
     foreach ($quoteExplode as $value){
         echo "<li>$value\n</li>";
@@ -92,6 +114,7 @@
     echo "<p><strong>Final Word Count:</strong></p>";
     echo count($quoteExplode);
     ?>
+    </div>
     <br>
     <a href = "https://cosw30bjp.herokuapp.com/Homework/homework4/quote.html" class="button">Try Again?</button></a>
     
