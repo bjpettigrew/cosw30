@@ -59,7 +59,7 @@
               echo "<tr><td>$rank</td>
                     <td>$k</td>
                     <td>$v</td></tr>\n";
-                    $no++;
+                    
           }  
             ?>
             
