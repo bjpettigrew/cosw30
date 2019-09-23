@@ -57,10 +57,10 @@
                 
           foreach ($poptable as $k => $v) {
             for($rank = 1; $rank <= 15; $rank++){
-              echo "<tr><td>$rank</td>
+              echo "<tr><td>$rank</td>}
                    <td>$k</td>
                    <td>$v</td></tr>\n";
-            }      
+              
           }  
             ?>
             
