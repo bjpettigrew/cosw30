@@ -38,7 +38,6 @@
     
     echo count($quoteExplode);
     
-    echo "<p>'$extraExplode'</p>";
     
     echo "<p><strong>Quoted Words In Alphabetical Order:</strong></p>";
     
@@ -60,11 +59,13 @@
     
     $quoteExplode = array_merge($quoteExplode, $extraExplode);
     
-    echo "at Contents:";
+    
     
     foreach ($quoteExplode as $value){
         echo $value . "\n";
     }
+    
+    echo count($quoteExplode);
     
     //$a = $quoteExplode;
     //$b = $extraExplode;
