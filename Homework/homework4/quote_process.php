@@ -38,6 +38,7 @@
     
     echo count($quoteExplode);
     
+    echo "<p>$extraExplode</p>";
     
     echo "<p><strong>Quoted Words In Alphabetical Order:</strong></p>";
     
@@ -59,13 +60,13 @@
     
     $a = $quoteExplode;
     $b = $extraExplode;
-    $c = $a.$b;
+    $c = $a . $b;
     $cExplode = explode(' ', $c);
     
-    echo "<p>'$cExplode'\n</p>";
+    echo "<p>'$c'\n</p>";
     
     
-    echo count($cExplode);
+    echo count($c);
     
     
     
