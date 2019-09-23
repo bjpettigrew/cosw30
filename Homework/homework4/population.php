@@ -48,11 +48,15 @@
                     ];
           //echo '<tr><td colspan="3"><strong>In Order of Population:</strong></td></tr>';
           
-          
-          foreach ($poptable as $k => $v) {
-              echo "<tr><td>1</td>
+                $rank = 1;
+                while ($rank <=15){
+                
+                
+          foreach ($poptable as $k => $v) 
+              echo "<tr><td>$rank</td>
                     <td>$k</td>
                     <td>$v</td></tr>\n";
+                    $no++;
           }  
             ?>
             
