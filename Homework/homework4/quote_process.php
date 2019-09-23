@@ -70,9 +70,14 @@
     echo "<p><strong>New Word Count:</strong></p>";
     echo count($quoteExplode);
     
+    array_splice($quoteExplode, 0, 3);
     
+    foreach ($quoteExplode as $value){
+        echo "<li>$value\n</li>";
+    }
     
-    
+    echo "<p><strong>Final Word Count:</strong></p>";
+    echo count($quoteExplode);
     
     //$quoteExplode = explode(' ', $quote);
     
