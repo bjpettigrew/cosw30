@@ -3,6 +3,18 @@
     <head>
       <meta charset="utf-8">
       <title>Sorting Arrays</title>
+      <style>
+          li {
+              list-style: none;
+          }
+          body {
+              background-color: #D3F0D2;
+              padding: 3% 10%;
+          }
+          
+          
+          
+      </style>
     </head>
     <body>
 
