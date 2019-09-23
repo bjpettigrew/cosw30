@@ -23,6 +23,7 @@
     
    
     $quote = $_POST['quote'];
+    $extra = $_POST['extra'];
     
     
     echo "<p><strong>Original Quote:</strong></p>";
@@ -30,6 +31,7 @@
     echo "<p>\"$quote\"</p>"; 
     
     $quoteExplode = explode(' ', $quote);
+    $extraExplode = explode(' ', $extra);
     
     echo "<p><strong>Word Count:</strong></p>";
    
@@ -53,7 +55,16 @@
          echo "<li>$val\n</li>";
       }
     
+    echo "<p><strong>With Additional Words:</strong></p>";
     
+    $a = $quoteExplode;
+    $b = $extraExplode;
+    $c = $a.$b;
+    
+    echo "<p> $c \n</p>";
+    
+    
+    echo count($c)
     
     
     
