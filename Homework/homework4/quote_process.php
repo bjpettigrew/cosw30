@@ -15,18 +15,21 @@
           h1 {
               text-align: center;
           }
+          h3 {
+              text-align: center;
+          }
           
           #left_box {
               border: 3px ridge #54A352;
               float: left;
               margin: 2%;
-              width: 28%;
+              width: 40%;
           }
           #right_box {
               border: 3px ridge #54A352;
               float: left;
               margin: 2%;
-              width: 28%;
+              width: 40%;
           }
           
           
@@ -58,7 +61,7 @@
     
     echo "<h1><strong>Original Quote:</strong></h1>";
         
-    echo "<p><strong>\"$quote\"</strong></p>"; 
+    echo "<h3><strong>\"$quote\"</strong></h3>"; 
     
     $quoteExplode = explode(' ', $quote);
     $extraExplode = explode(' ', $extra);
