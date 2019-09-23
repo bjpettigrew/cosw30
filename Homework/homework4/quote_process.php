@@ -60,11 +60,12 @@
     $a = $quoteExplode;
     $b = $extraExplode;
     $c = $a.$b;
+    $cExplode = explode(' ', $c);
     
-    echo "<p> $c \n</p>";
+    echo "<p>'$cExplode'\n</p>";
     
     
-    echo count($c)
+    echo count($cExplode);
     
     
     
