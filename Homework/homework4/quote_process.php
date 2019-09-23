@@ -62,20 +62,15 @@
     
     
     foreach ($quoteExplode as $value){
-        echo $value . "\n";
+        //echo $value . "\n";
+        echo "<li>$value\n</li>";
     }
     
+    
+    echo "<p><strong>New Word Count:</strong></p>";
     echo count($quoteExplode);
     
-    //$a = $quoteExplode;
-    //$b = $extraExplode;
-    //$c = $a . $b;
-    //$cExplode = explode(' ', $c);
     
-    //echo "<p>'$c'\n</p>";
-    
-    
-    //echo count($c);
     
     
     
