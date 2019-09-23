@@ -52,15 +52,18 @@
                 
  
  
- 
+            $rank = array();
+            for($i = 1; $i <+ 15; $i++)
+            $rank[$i] = $i +1;
+            
                 
                 
           foreach ($poptable as $k => $v) {
-            for($rank = 1; $rank <= 15; $rank++){
-              echo "<tr><td>$rank</td>}
+            //for($rank = 1; $rank <= 15; $rank++){
+              echo "<tr><td>$rank</td>
                    <td>$k</td>
                    <td>$v</td></tr>\n";
-              
+            //}  
           }  
             ?>
             
