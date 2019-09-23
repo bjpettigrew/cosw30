@@ -9,7 +9,7 @@
           }
           body {
               background-color: #D3F0D2;
-              padding: 3% 10%;
+              padding: 3% 8%;
           }
           
           h1 {
@@ -20,11 +20,13 @@
               border: 3px ridge #54A352;
               float: left;
               margin: 2%;
+              width: 28%;
           }
           #right_box {
               border: 3px ridge #54A352;
               float: left;
               margin: 2%;
+              width: 28%;
           }
           
           
@@ -115,6 +117,7 @@
     echo count($quoteExplode);
     ?>
     </div>
+    <br>
     <br>
     <a href = "https://cosw30bjp.herokuapp.com/Homework/homework4/quote.html" class="button">Try Again?</button></a>
     
