@@ -110,14 +110,16 @@
         <tbody> 
         <?php
           $counter = 0;  
-          foreach ($poptable as $k => $row){
-            $city[$k] = $row['city'];
-            $population[$k] = $row['population'];
-          }
-          $city = array_column($poptable, 'city');
-          $population = array_column($poptable, 'population');
-          array_multisort($city, SORT_ASC, $population, $poptable);
+          //foreach ($poptable as $k => $row){
+          //  $city[$k] = $row['city'];
+          //  $population[$k] = $row['population'];
+          //}
+          //$city = array_column($poptable, 'city');
+         // $population = array_column($poptable, 'population');
+          //array_multisort($city, SORT_ASC, $population, $poptable);
           
+          
+          ksort($poptable);
           foreach ($poptable as $k => $v) {
           $counter++;
           echo "<tr><td>$counter</td>
