@@ -61,8 +61,30 @@
         
         ?>
         </tbody> 
-        
-        array-multisort($k, SORT_ASC, $v, SORT_ASC, $poptable);
+        $poptable = [
+                    'New York, New York' => '8,622,698',
+                    'Los Angeles, California' => '3,999,759',
+                    'Chicago, Illinois' => '2,716,450',
+                    'Houston, Texas' => '2,312,717',
+                    'Phoenix, Arizona' => '1,626,078',
+                    'Philadelphia, Pennsylvania' => '1,580,863',
+                    'San Antonio, Texas' => '1,511,946',
+                    'San Diego, California' => '1,419,516',
+                    'Dallas, Texas' => '1,341,075',
+                    'San Jose, California' => '1,035,317',
+                    'Austin, Texas' => '950,715',
+                    'Jacksonville, Florida' => '892,062',
+                    'San Francisco, California' => '884,363',
+                    'Columbus, Ohio' => '879,170',
+                    'Fort Worth, Texas' => '874,168'
+                    ];
+                    
+              foreach ($poptable as $row) {
+                foreach ($row as $k => $v){
+                ${$k}[]  = $v; }
+                }
+                    
+              array-multisort($k, SORT_ASC, $v, SORT_ASC, $poptable);
         
         
         
