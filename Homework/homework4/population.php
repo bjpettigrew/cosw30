@@ -8,12 +8,17 @@
               background-color: #D3F0D2;
               padding: 3% 8%;
           }
+          
+          #table1 {
+            float:left;
+          }
               
               
       </style>
     </head>
       
     <body>
+      <div id="table1">
         <table border="2" cellspacing="3" cellpadding="3" align="center">
         <thead>
             <tr>
@@ -62,8 +67,9 @@
         ?>
         </tbody>
         </table>
+        </div>
         <br>
-        
+        <div id="table2">
         <?php # Script 2.8 - sorting.php
         $poptable = [
                     'New York, New York' => '8,622,698',
@@ -110,15 +116,7 @@
         <tbody> 
         <?php
           $counter = 0;  
-          //foreach ($poptable as $k => $row){
-          //  $city[$k] = $row['city'];
-          //  $population[$k] = $row['population'];
-          //}
-          //$city = array_column($poptable, 'city');
-         // $population = array_column($poptable, 'population');
-          //array_multisort($city, SORT_ASC, $population, $poptable);
-          
-          
+         
           ksort($poptable);
           foreach ($poptable as $k => $v) {
           $counter++;
@@ -132,21 +130,10 @@
 
             
         </table>
-        
-        
-        
-        </php
-            
+        </div>
       
       
-      
-      
-      
-      
-      
-      
-      
-        ?>
+  
     </body>
  </html>     
       
