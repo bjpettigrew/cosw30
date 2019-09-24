@@ -83,12 +83,9 @@
                     'Fort Worth, Texas' => '874,168'
                     ];
                     
-              foreach ($poptable as $row) {
-                foreach ($row as $k => $v){
-                ${$k}[]  = $v; }
-                }
+              
                     
-              array_multisort($k, SORT_ASC, $v, $poptable);
+              //array_multisort($k, SORT_ASC, $v, $poptable);
         
         ?>
         
@@ -112,13 +109,21 @@
         
         <tbody> 
         <?php
-          $counter = 0;     
-          foreach ($poptable as $k => $v) {
+          $counter = 0;  
+          foreach ($poptable as $k => $row){
+            $city[$k] = $row['city'];
+            $population[$k] = $row['population'];
+          }
+          $city = array_column($poptable, 'city');
+          $population = array_column($poptable, 'population');
+          array_multisort($city, SORT_ASC, $population, $poptable);
+          
+          //foreach ($poptable as $k => $v) {
           $counter++;
           echo "<tr><td>$counter</td>
                 <td>$k</td>
                 <td>$v</td></tr>\n";
-          }
+          //}
           
             ?>
           </tbody>    
