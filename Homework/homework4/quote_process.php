@@ -86,7 +86,7 @@
     
     echo "<p><strong>Quoted Words In Reverse-Alphabetical Order:</strong></p>";
     
-    rsort($quoteExplode);
+    ursort($quoteExplode, 'strnatcasecmp');
         
        foreach ($quoteExplode as $val) {
          echo "<li>$val\n</li>";
