@@ -53,17 +53,17 @@
  
             //$rank = array();
             //$rank = $i();
-            //for($i = 1; $i <+ 15; $i++)
+            //for($i = 1; $i <= 15; $i++)
             //$rank[$i] = $i +1;
             
                 
-                
+          $counter = 0;     
           foreach ($poptable as $k => $v) {
-            for($rank = 1; $rank <= 15; $rank++){
-              echo "<tr><td>$rank</td>
+            $counter++;
+              echo "<tr><td>$counter</td>
                    <td>$k</td>
                    <td>$v</td></tr>\n";
-            }  
+            
           }  
             ?>
             
