@@ -61,6 +61,9 @@
         
         ?>
         </tbody>
+        </table>
+        <br>
+        
         <?php # Script 2.8 - sorting.php
         $poptable = [
                     'New York, New York' => '8,622,698',
@@ -85,7 +88,7 @@
                 ${$k}[]  = $v; }
                 }
                     
-              array_multisort($k, SORT_ASC, $v, SORT_ASC, $poptable);
+              array_multisort($k, SORT_ASC, $v, $poptable);
         
         ?>
         
@@ -94,7 +97,7 @@
         <table border="2" cellspacing="3" cellpadding="3" align="center">
         <thead>
             <tr>
-                <td colspan="3"><strong><h1>The Fifteen Most Populous Cities As Of July 1, 2017 In Alphabetical Order</h1></strong></td>
+                <td colspan="3"><strong><h1>The Fifteen Most Populous Cities In Alphabetical Order</h1></strong></td>
             </tr>
             
             <tr>
@@ -117,20 +120,9 @@
                 <td>$v</td></tr>\n";
           }
           
-        
-          
-          
-          
-          
             ?>
           </tbody>    
-            
-            
-            
-         
-            
-            
-            
+
             
         </table>
         
