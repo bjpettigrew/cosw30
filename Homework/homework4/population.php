@@ -60,7 +60,8 @@
            
         
         ?>
-        </tbody> 
+        </tbody>
+        <?php # Script 2.8 - sorting.php
         $poptable = [
                     'New York, New York' => '8,622,698',
                     'Los Angeles, California' => '3,999,759',
@@ -84,9 +85,9 @@
                 ${$k}[]  = $v; }
                 }
                     
-              array-multisort($k, SORT_ASC, $v, SORT_ASC, $poptable);
+              array_multisort($k, SORT_ASC, $v, SORT_ASC, $poptable);
         
-        
+        ?>
         
         
         
@@ -103,8 +104,11 @@
             </tr>
             
         </thead> 
-        <tbody> 
         
+        
+        
+        <tbody> 
+        <?php
           $counter = 0;     
           foreach ($poptable as $k => $v) {
           $counter++;
@@ -113,13 +117,13 @@
                 <td>$v</td></tr>\n";
           }
           
-        </tbody>  
+        
           
           
           
           
             ?>
-            
+          </tbody>    
             
             
             
