@@ -22,7 +22,7 @@
         <table border="2" cellspacing="3" cellpadding="3" align="center">
         <thead>
             <tr>
-                <td colspan="3"><strong><h1>The Fifteen Most Populous Cities As Of July 1, 2017</h1></strong></td>
+                <td colspan="3"><strong><h1>The Fifteen Most Populous Cities<br> As Of July 1, 2017</h1></strong></td>
             </tr>
             
             <tr>
@@ -100,7 +100,7 @@
         <table border="2" cellspacing="3" cellpadding="3" align="center">
         <thead>
             <tr>
-                <td colspan="3"><strong><h1>The Fifteen Most Populous Cities In Alphabetical Order</h1></strong></td>
+                <td colspan="3"><strong><h1>The Fifteen Most Populous Cities<br> In Alphabetical Order</h1></strong></td>
             </tr>
             
             <tr>
