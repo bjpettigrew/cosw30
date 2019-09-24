@@ -48,15 +48,7 @@
                     ];
           //echo '<tr><td colspan="3"><strong>In Order of Population:</strong></td></tr>';
           
-                
-                
- 
-            //$rank = array();
-            //$rank = $i();
-            //for($i = 1; $i <= 15; $i++)
-            //$rank[$i] = $i +1;
-            
-                
+           
           $counter = 0;     
           foreach ($poptable as $k => $v) {
             $counter++;
@@ -64,13 +56,52 @@
                    <td>$k</td>
                    <td>$v</td></tr>\n";
             
-          }  
+          }
+           
+        
+        ?>
+        </tbody> 
+        
+        array-multisort($k, SORT_ASC, $v, SORT_ASC, $poptable);
+        
+        
+        
+        
+        
+        <table border="2" cellspacing="3" cellpadding="3" align="center">
+        <thead>
+            <tr>
+                <td colspan="3"><strong><h1>The Fifteen Most Populous Cities As Of July 1, 2017 In Alphabetical Order</h1></strong></td>
+            </tr>
+            
+            <tr>
+                <th><h2> </h2></th>
+                <th><h2>City, State</h2></th>
+                <th><h2>2017 Total Population</h2></th>
+            </tr>
+            
+        </thead> 
+        <tbody> 
+        
+          $counter = 0;     
+          foreach ($poptable as $k => $v) {
+          $counter++;
+          echo "<tr><td>$counter</td>
+                <td>$k</td>
+                <td>$v</td></tr>\n";
+          }
+          
+        </tbody>  
+          
+          
+          
+          
             ?>
             
             
             
             
-        </tbody>    
+         
             
             
             
