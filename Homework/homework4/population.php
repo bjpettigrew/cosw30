@@ -116,14 +116,14 @@
           }
           $city = array_column($poptable, 'city');
           $population = array_column($poptable, 'population');
-          array_multisort($city, SORT_ASC, $population, $poptable);
+          array_multisort($city, SORT_ASC, $population, SORT_ASC, $poptable);
           
-          //foreach ($poptable as $k => $v) {
+          foreach ($poptable as $k => $v) {
           $counter++;
           echo "<tr><td>$counter</td>
                 <td>$k</td>
                 <td>$v</td></tr>\n";
-          //}
+          }
           
             ?>
           </tbody>    
