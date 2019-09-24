@@ -11,8 +11,16 @@
           
           #table1 {
             float:left;
+            margin: 2% 5% auto auto;
           }
-              
+          
+          #table2 {
+            margin: 2% 5% auto auto;
+          }
+          
+          h1 {
+            text-align: center;
+          }    
               
       </style>
     </head>
@@ -68,7 +76,7 @@
         </tbody>
         </table>
         </div>
-        <br>
+        
         <div id="table2">
         <?php # Script 2.8 - sorting.php
         $poptable = [
